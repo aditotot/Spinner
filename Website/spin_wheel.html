@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Spin Wheel</title>
+    
+    <style>
+        /* Basic Layout Styles */
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; background-color: #f4f4f9; }
+        .container { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-top: 20px; }
+        .region-buttons, .manual-controls { margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 10px; }
+        button, #loadManual, #shuffleButton, #resetButton { padding: 10px 15px; font-size: 1em; cursor: pointer; border: none; border-radius: 5px; transition: background-color 0.3s; }
+        #spinButton { background-color: #4CAF50; color: white; font-size: 1.5em; padding: 15px 30px; }
+        #spinButton:disabled { background-color: #ccc; cursor: not-allowed; }
+        
+        /* UPDATED: Set size via CSS for visual scale */
+        canvas { 
+            width: 500px; 
+            height: 500px;
+            border: 2px solid #333; 
+            margin: 20px auto; 
+            display: block; 
+            background-color: #fff; 
+            border-radius: 50%; 
+            cursor: pointer; 
+        } 
+
+        #status { margin-top: 10px; font-size: 1.2em; font-weight: bold; color: #333; }
+        #remaining-count { margin-bottom: 15px; color: #555; }
+        
+        /* New section for map targets */
+        #mapTargetContainer {
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        #mapTargetContainer label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Modal Styles */
+        .modal {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); display: flex;
+            justify-content: center; align-items: center; z-index: 1000;
+        }
+        .modal-content {
+            background-color: #fefefe; padding: 20px; border: 1px solid #888;
+            width: 80%; max-width: 500px; border-radius: 10px; position: relative;
+            text-align: center; animation: modalopen 0.4s;
+        }
+        .close-button {
+            color: #d9534f; font-size: 40px; font-weight: bold;
+            position: absolute; top: 0px; right: 10px; cursor: pointer;
+            line-height: 1; 
+        }
+        @keyframes modalopen {
+            from {opacity:0} 
+            to {opacity:1}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Discord Lobby Generator</h1>
+        
+        <div class="region-buttons">
+            <button id="region1Btn" data-region="REGION 1">Load REGION 1</button>
+            <button id="region2Btn" data-region="REGION 2">Load REGION 2</button>
+            <button id="mapBtn" data-region="MAPS">Load MAPS</button>
+        </div>
+        
+        <div id="mapTargetContainer" style="display: none;">
+            <label for="lobbySelect">Spin Map for Lobby:</label>
+            <select id="lobbySelect">
+                </select>
+        </div>
+        
+        <div id="status">Select a region or maps to begin.</div>
+        <div id="remaining-count">Items remaining: 0</div>
+
+        <div class="wheel-controls">
+            <canvas id="wheelCanvas"></canvas>
+            <button id="spinButton" disabled>Spin!</button>
+        </div>
+
+        <div class="manual-controls">
+            <label for="manualData">Manual Data (New Line Separated IGNs/Maps):</label>
+            <textarea id="manualData" rows="4"></textarea>
+            <button id="loadManual">Load Manual Data</button>
+            <button id="shuffleButton" disabled>Shuffle Items</button>
+            <button id="resetButton">Reset Current Pool</button>
+        </div>
+
+        <ul id="namesList"></ul>
+    </div>
+
+    <div id="winnerModal" class="modal" style="display:none;">
+        <div class="modal-content" id="modal-content">
+            <span class="close-button" id="closeModal">&times;</span> 
+            <h2 id="modalTitle"></h2>
+            <p id="modalBody"></p>
+        </div>
+    </div>
+
+    <script src="spin_logic.js"></script> 
+</body>
+</html>
