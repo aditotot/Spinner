@@ -1,0 +1,201 @@
+{
+  "registrations": [ 
+    {
+      "userId": "100000000000000001",
+      "username": "ShadowStriker_User",
+      "ign": "ShadowStriker",
+      "region": "USE"
+    },
+    {
+      "userId": "100000000000000002",
+      "username": "VortexPlayer_User",
+      "ign": "VortexPlayer",
+      "region": "USW"
+    },
+    {
+      "userId": "100000000000000003",
+      "username": "ZenithZeus_User",
+      "ign": "ZenithZeus",
+      "region": "EU"
+    },
+    {
+      "userId": "100000000000000004",
+      "username": "NightHunter_User",
+      "ign": "NightHunter",
+      "region": "SA"
+    },
+    {
+      "userId": "100000000000000005",
+      "username": "PixelKing_User",
+      "ign": "PixelKing",
+      "region": "USE"
+    },
+    {
+      "userId": "100000000000000006",
+      "username": "SilentForce_User",
+      "ign": "SilentForce",
+      "region": "EU"
+    },
+    {
+      "userId": "100000000000000007",
+      "username": "FastFlash_User",
+      "ign": "FastFlash",
+      "region": "USW"
+    },
+    {
+      "userId": "100000000000000008",
+      "username": "IronFist_User",
+      "ign": "IronFist",
+      "region": "SA"
+    },
+    {
+      "userId": "100000000000000009",
+      "username": "CosmoNaut_User",
+      "ign": "CosmoNaut",
+      "region": "USE"
+    },
+    {
+      "userId": "100000000000000010",
+      "username": "OceanWave_User",
+      "ign": "OceanWave",
+      "region": "EU"
+    },
+    {
+      "userId": "100000000000000011",
+      "username": "BlazeFury_User",
+      "ign": "BlazeFury",
+      "region": "USW"
+    },
+    {
+      "userId": "100000000000000012",
+      "username": "FrostBite_User",
+      "ign": "FrostBite",
+      "region": "SA"
+    },
+    {
+      "userId": "100000000000000013",
+      "username": "StormBreaker_User",
+      "ign": "StormBreaker",
+      "region": "USE"
+    },
+    {
+      "userId": "100000000000000014",
+      "username": "RoadWarrior_User",
+      "ign": "RoadWarrior",
+      "region": "EU"
+    },
+    {
+      "userId": "100000000000000015",
+      "username": "ChaosAgent_User",
+      "ign": "ChaosAgent",
+      "region": "USW"
+    },
+    {
+      "userId": "100000000000000016",
+      "username": "DarkKnight_User",
+      "ign": "DarkKnight",
+      "region": "SA"
+    },
+    {
+      "userId": "200000000000000001",
+      "username": "DragonFire_User",
+      "ign": "DragonFire",
+      "region": "ASIA"
+    },
+    {
+      "userId": "200000000000000002",
+      "username": "Maharaja_User",
+      "ign": "Maharaja",
+      "region": "INDIA"
+    },
+    {
+      "userId": "200000000000000003",
+      "username": "KangarooJ_User",
+      "ign": "KangarooJ",
+      "region": "AU"
+    },
+    {
+      "userId": "200000000000000004",
+      "username": "Shaolin_User",
+      "ign": "Shaolin",
+      "region": "ASIA"
+    },
+    {
+      "userId": "200000000000000005",
+      "username": "SpicyIGN_User",
+      "ign": "SpicyIGN",
+      "region": "INDIA"
+    },
+    {
+      "userId": "200000000000000006",
+      "username": "KoalaKiller_User",
+      "ign": "KoalaKiller",
+      "region": "AU"
+    },
+    {
+      "userId": "200000000000000007",
+      "username": "KatanaCut_User",
+      "ign": "KatanaCut",
+      "region": "ASIA"
+    },
+    {
+      "userId": "200000000000000008",
+      "username": "DancerBoy_User",
+      "ign": "DancerBoy",
+      "region": "INDIA"
+    },
+    {
+      "userId": "200000000000000009",
+      "username": "DingoHunt_User",
+      "ign": "DingoHunt",
+      "region": "AU"
+    },
+    {
+      "userId": "200000000000000010",
+      "username": "AncientOne_User",
+      "ign": "AncientOne",
+      "region": "ASIA"
+    },
+    {
+      "userId": "200000000000000011",
+      "username": "GigaChadIN_User",
+      "ign": "GigaChadIN",
+      "region": "INDIA"
+    },
+    {
+      "userId": "200000000000000012",
+      "username": "BeachBum_User",
+      "ign": "BeachBum",
+      "region": "AU"
+    },
+    {
+      "userId": "200000000000000013",
+      "username": "KungFuMst_User",
+      "ign": "KungFuMst",
+      "region": "ASIA"
+    },
+    {
+      "userId": "200000000000000014",
+      "username": "HotTea_User",
+      "ign": "HotTea",
+      "region": "INDIA"
+    },
+    {
+      "userId": "200000000000000015",
+      "username": "EmuHunter_User",
+      "ign": "EmuHunter",
+      "region": "AU"
+    },
+    {
+      "userId": "200000000000000016",
+      "username": "KanjiCode_User",
+      "ign": "KanjiCode",
+      "region": "ASIA"
+    }
+  ],
+  "spinLogs": [],
+  "config": {},
+  "activeLobbies": {},
+  "lobbyHistory": [],
+  "matchResults": []
+}
